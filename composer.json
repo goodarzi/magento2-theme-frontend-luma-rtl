@@ -1,0 +1,26 @@
+{
+    "name": "goodarzi/theme-frontend-luma-rtl",
+    "description": "N/A",
+    "type": "magento2-theme",
+    "license": [
+        "GPL-3.0-or-later"
+    ],
+    "authors": [
+        {
+            "homepage": "https://github.com/goodarzi",
+            "role": "Developer"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "version": "0.0.1",
+    "require": {
+        "goodarzi/theme-frontend-blank-rtl": "0.0.1"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ]
+    }
+}
