@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+<reference name="head">
+    <action method="addLinkRel">
+        <rel>canonical</rel>
+        <href>{{baseUrl}}customer/account/login</href>
+    </action>
+</reference>
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <link rel="canonical" src="{{baseUrl}}customer/account/login" src_type="url" />
+    </head>
+
+</page>

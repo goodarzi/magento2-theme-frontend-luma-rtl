@@ -1,0 +1,44 @@
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<!--@subject {{trans "Footer"}} @-->
+<!--@vars {
+"var store.frontend_name":"Store Name",
+"var url_about_us":"About Us URL",
+"var url_customer_service":"Customer Service URL",
+"var store_phone":"Store Phone",
+"var store_hours":"Store Hours",
+"var store.formatted_address|raw":"Store Address"
+} @-->
+
+                    <!-- End Content -->
+                    </td>
+                </tr>
+                <tr>
+                    <td class="footer">
+                        <table>
+                            <tr>
+                                <td style="text-align : center;">
+                                    <p>{{var store.frontend_name}}</p>
+                                    <p>
+                                    {{config path="general/store_information/street_line1"}}
+                                    </p>
+                                    {{depend store_phone}}
+                                        <p class="phone">
+                                            <a href="tel:{{var store_phone}}">{{var store_phone}}</a>
+                                        </p>
+                                    {{/depend}}
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<!-- End wrapper table -->
+</body>
