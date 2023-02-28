@@ -15,8 +15,6 @@
                 </arguments>
             </block>
         </referenceBlock>
-        <referenceBlock name="customer-account-navigation-my-credit-cards-link" remove="true"/>
-        <referenceBlock name="customer-account-navigation-downloadable-products-link" remove="true"/>
         <move element="header" destination="header.links" before="-"/>
         <move element="register-link" destination="header.links"/>
         <move element="top.links" destination="customer"/>

@@ -10,7 +10,5 @@
         <move element="page.main.title" destination="product.info.main" before="-"/>
         <move element="product.info.stock.sku" destination="product.info.price" after="product.price.final"/>
         <move element="product.info.review" destination="product.info.main" before="product.info.price"/>
-        <referenceBlock name='breadcrumbs' template='Magento_Theme::html/breadcrumbs.phtml' />
-        <block class='Magento\Catalog\Block\Breadcrumbs'/>
     </body>
 </page>

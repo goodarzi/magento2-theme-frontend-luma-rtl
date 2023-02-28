@@ -88,7 +88,6 @@
                 strong {
                     .lib-font-size(14);
                     font-weight: @font-weight__semibold;
-                    cursor: pointer;
                 }
             }
 
@@ -246,14 +245,10 @@
                 padding-bottom: 15px;
                 position: relative;
 
-                > .action-edit {
-                    left: 50px;
-                }
-
                 > .action-edit,
                 > .action-delete {
                     position: absolute;
-                    
+                    left: 16px;
                     top: 0;
                     .lib-icon-font(
                     @icon-edit,
@@ -272,6 +267,10 @@
                     .lib-icon-font-symbol(
                     @_icon-font-content: @icon-trash
                     );
+
+                    &:hover {
+                        .lib-css(text-decoration, @link__text-decoration);
+                    }
                 }
             }
 
@@ -429,7 +428,14 @@
     .cart-container {
         .form-cart {
             .actions.main {
-                text-align: center;
+                .lib-vendor-prefix-display();
+                .lib-vendor-prefix-flex-direction(column);
+                .lib-vendor-box-align(center);
+
+                .clear,
+                .continue {
+                    .lib-css(margin, 0 0 @indent__m 0);
+                }
             }
         }
     }
@@ -572,7 +578,7 @@
 
         .widget {
             float: right;
-            
+
             &.block {
                 margin-bottom: @indent__base;
             }
@@ -605,7 +611,6 @@
 
                 &:after {
                     left: 3px;
-                    font-family: 'luma-icons';
                 }
             }
 
@@ -726,7 +731,12 @@
                     position: static;
                 }
             }
+
             &.discount {
+                width: auto;
+            }
+
+            .actions-toolbar {
                 width: auto;
             }
         }
